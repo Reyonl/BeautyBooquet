@@ -39,3 +39,10 @@ function type() {
     setTimeout(type, typingDirection === 1 ? 500 : 50); // Set typing and deleting speed
 }
 type();
+
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
