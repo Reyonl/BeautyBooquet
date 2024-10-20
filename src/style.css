@@ -1,3 +1,12 @@
+@media only screen and (max-width: 600px) {
+    #hero {
+        width: 300px !important;
+        height: auto !important;
+    }
+}
+
+
+
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -5,6 +14,7 @@
     bottom: 100%;
     z-index: 10;
 }
+
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -16,19 +26,23 @@
     border-radius: 0.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .product-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
+
 .product-card img {
     width: 100%;
     height: auto;
     display: block;
     transition: transform 0.3s ease;
 }
+
 .product-card:hover img {
     transform: scale(1.1);
 }
+
 .product-overlay {
     position: absolute;
     top: 0;
@@ -45,33 +59,44 @@
     color: #fff;
     text-align: center;
 }
+
 .product-card:hover .product-overlay {
     opacity: 1;
 }
+
 .product-overlay i {
     font-size: 3rem;
     margin-bottom: 0.5rem;
     animation: bounce 1s infinite;
 }
+
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
 }
+
 .product-overlay span {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 #dropdown {
-    display: none; /* Hide dropdown by default */
+    display: none;
+    /* Hide dropdown by default */
 }
 
 #dropdown.hidden {
-    display: none; /* Hide when hidden class is added */
+    display: none;
+    /* Hide when hidden class is added */
 }
+
 .typing {
     border-right: 2px solid;
     white-space: nowrap;
@@ -80,7 +105,13 @@
 }
 
 @keyframes caret {
-    0%, 100% { border-color: transparent; }
-    50% { border-color: black; }
-}
 
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
+}
