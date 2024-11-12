@@ -84,3 +84,10 @@
     50% { border-color: black; }
 }
 
+
+.itim-regular {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+

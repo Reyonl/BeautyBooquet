@@ -40,16 +40,41 @@ function type() {
 }
 type();
 
-    const menuButton = document.getElementById('menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+function smoothScrollTo(targetElement, duration) {
+    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
 
-    menuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+    }
 
-    const menuButton = document.getElementById('menuButton');
-    const mobileMenu = document.getElementById('mobileMenu');
-    
-    menuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
+    function ease(t, b, c, d) { // Ease-in-out function
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+}
+
+// Event listeners for both produkLink and locationLink
+document.getElementById('produkLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    smoothScrollTo(targetElement, 1000); // 1000 ms for 1 second duration
+});
+
+document.getElementById('locationLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    smoothScrollTo(targetElement, 1000); // 1000 ms for 1 second duration
+});
