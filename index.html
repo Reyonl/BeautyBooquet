@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Beauty Bouquet</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--  -->
     <link rel="icon" href="src/images/flower-bouquet.png" type="image/x-icon">
     <link rel="stylesheet" href="src/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body class="bg-pink-100 itim-regular">
     <!-- Navbar -->
     <nav class="bg-pink-100 shadow-md">
@@ -22,26 +29,32 @@
                 <img src="src/images/flower-bouquet.png" alt="Bouquet Icon" class="w-8 h-8 mr-2">
                 Beauty Bouquet
             </div>
-            
+
             <!-- Hamburger button for mobile -->
             <button class="md:hidden text-gray-800 text-2xl focus:outline-none" id="menuButton">
                 <i class="fas fa-bars"></i>
             </button>
-            
+
             <!-- Menu items -->
             <ul class="hidden md:flex space-x-6" id="navLinks">
-                <li><a class="text-gray-800 hover:text-gray-600 text-lg font-semibold" href="#produk" id="produkLink">Produk</a></li>
-                <li><a class="text-gray-800 hover:text-gray-600 text-lg font-semibold" href="#Location" id="locationLink">Location</a></li>
-                <li><a class="text-red-600 hover:text-red-400 text-lg font-semibold" href="https://api.whatsapp.com/send?phone=6287785404712">For Business</a></li>
+                <li><a class="text-gray-800 hover:text-gray-600 text-lg font-semibold" href="#produk"
+                        id="produkLink">Produk</a></li>
+                <li><a class="text-gray-800 hover:text-gray-600 text-lg font-semibold" href="#Location"
+                        id="locationLink">Location</a></li>
+                <li><a class="bisnis hover:text-red-400 text-lg font-semibold"
+                        href="https://api.whatsapp.com/send?phone=6287785404712">For Business</a></li>
             </ul>
         </div>
-        
+
         <!-- Dropdown for mobile -->
         <div class="md:hidden hidden" id="mobileMenu">
             <ul class="space-y-4 p-4">
-                <li><a class="text-gray-800 hover:text-gray-600 text-lg font-semibold" href="#produk" id="produkLinkMobile">Produk</a></li>
-                <li><a class="text-gray-800 hover:text-gray-600 text-lg font-semibold" href="#Location">Location</a></li>
-                <li><a class="text-red-600 hover:text-red-400 text-lg font-semibold" href="https://api.whatsapp.com/send?phone=6287785404712">For Business</a></li>
+                <li><a class="text-gray-800 hover:text-gray-600 text-lg font-semibold" href="#produk"
+                        id="produkLinkMobile">Produk</a></li>
+                <li><a class="text-gray-800 hover:text-gray-600 text-lg font-semibold" href="#Location">Location</a>
+                </li>
+                <li><a class="text-red-600 hover:text-red-400 text-lg font-semibold"
+                        href="https://api.whatsapp.com/send?phone=6287785404712">For Business</a></li>
             </ul>
         </div>
     </nav>
@@ -50,11 +63,15 @@
     <section class="bg-pink-100 py-12">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2">
-                <img alt="Bouquet of flowers and gifts" class="h-auto max-w-full md:max-w-[30vw] transform rotate-[-30deg]" src="src/images/bouqet4_-_Copy.png" style="height: auto; max-height: 70vh;" />
+                <img alt="Bouquet of flowers and gifts"
+                    class="h-auto max-w-full md:max-w-[30vw] transform rotate-[-30deg]"
+                    src="src/images/bouqet4_-_Copy.png" style="height: auto; max-height: 70vh;" />
             </div>
             <div class="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
                 <h1 id="typing-effect" class="text-3xl font-bold text-gray-800">Beauty in Every Bouquet</h1>
-                <p class="mt-4 text-gray-600">Bunga bukan hanya sekadar hadiah, tetapi juga ungkapan perasaan. Temukan bouquet yang tepat untuk setiap emosi cinta, syukur, atau persahabatan dan buat hari seseorang menjadi lebih cerah.</p>
+                <p class="mt-4 text-gray-600">Bunga bukan hanya sekadar hadiah, tetapi juga ungkapan perasaan. Temukan
+                    bouquet yang tepat untuk setiap emosi cinta, syukur, atau persahabatan dan buat hari seseorang
+                    menjadi lebih cerah.</p>
             </div>
         </div>
     </section>
@@ -65,104 +82,100 @@
             <h1 class="text-3xl font-bold text-gray-800">Produk</h1>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <!-- Product Card 1 -->
-            <a href="https://api.whatsapp.com/send?phone=6287785404712&text=Halo,%20saya%20ingin%20pesan%20bouquet!" class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
-                <img alt="Bouquet of flowers" src="src/images/bouqet1.jpeg"/>
-                <div class="p-4 text-center">
-                    <h3 class="text-xl font-semibold text-gray-800">Bouquet Snack</h3>
-                    <p class="text-gray-600">Rp. 200,000</p>
+            <!-- 1 -->
+            <div class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="src/images/bouqet1.jpeg" class="w-full h-48 object-cover" alt="...">
+                    <div class="p-4 text-center">
+                        <h5 class="text-xl font-semibold mb-2">Bouquet Snack</h5>
+                        <h6 class="text-sm text-gray-500 mb-2">50k</h6>
+                        <button class="button-item" role="button">Deskripsi</button>
+                    </div>
                 </div>
-                <div class="product-overlay">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>Click Untuk Pesan Bouquet</span>
-                </div>
-            </a>
+            </div>
+
             <!-- Product Card 2 -->
-            <a href="https://api.whatsapp.com/send?phone=6287785404712&text=Halo,%20saya%20ingin%20pesan%20bouquet!" class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
-                <img alt="Bouquet of flowers" src="src/images/bouqet2.jpeg"/>
-                <div class="p-4 text-center">
-                    <h3 class="text-xl font-semibold text-gray-800">Bouquet Mawar Merah</h3>
-                    <p class="text-gray-600">Rp 300,000</p>
+            <div class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="src/images/bouqet2.jpeg" class="w-full h-48 object-cover" alt="...">
+                    <div class="p-4 text-center">
+                        <h5 class="text-xl font-semibold mb-2">Bouquet Red Roses</h5>
+                        <h6 class="text-sm text-gray-500 mb-2">100k</h6>
+                        <button class="button-item" role="button">Deskripsi</button>
+                    </div>
                 </div>
-                <div class="product-overlay">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>Click Untuk Pesan Bouquet</span>
-                </div>
-            </a>
+            </div>
             <!-- Product Card 3 -->
-            <a href="https://api.whatsapp.com/send?phone=6287785404712&text=Halo,%20saya%20ingin%20pesan%20bouquet!" class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
-                <img alt="Bouquet of flowers" src="src/images/bouqet8.jpeg"/>
-                <div class="p-4 text-center">
-                    <h3 class="text-xl font-semibold text-gray-800">Bouquet Mawar</h3>
-                    <p class="text-gray-600">Rp 200,000</p>
+            <div class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="src/images/bouqet8.jpeg" class="w-full h-48 object-cover" alt="...">
+                    <div class="p-4 text-center">
+                        <h5 class="text-xl font-semibold mb-2">Bouquet Mawar</h5>
+                        <h6 class="text-sm text-gray-500 mb-2">50k</h6>
+                        <button class="button-item" role="button">Deskripsi</button>
+                    </div>
                 </div>
-                <div class="product-overlay">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>Click Untuk Pesan Bouquet</span>
-                </div>
-            </a>
+            </div>
             <!-- Product Card 4 -->
-            <a href="https://api.whatsapp.com/send?phone=6287785404712&text=Halo,%20saya%20ingin%20pesan%20bouquet!" class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
-                <img alt="Bouquet of flowers" src="src/images/bouqet4.jpeg"/>
-                <div class="p-4 text-center">
-                    <h3 class="text-xl font-semibold text-gray-800">Bouquet Krisan</h3>
-                    <p class="text-gray-600">Rp 350,000</p>
+            <div class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="src/images/bouqet4.jpeg" class="w-full h-48 object-cover" alt="...">
+                    <div class="p-4 text-center">
+                        <h5 class="text-xl font-semibold mb-2">Bouquet Flowers</h5>
+                        <h6 class="text-sm text-gray-500 mb-2">50k</h6>
+                        <button class="button-item" role="button">Deskripsi</button>
+                    </div>
                 </div>
-                <div class="product-overlay">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>Click Untuk Pesan Bouquet</span>
-                </div>
-            </a>
+            </div>
             <!-- Additional Product Cards -->
             <!-- Product Card 5 -->
-            <a href="https://api.whatsapp.com/send?phone=6287785404712&text=Halo,%20saya%20ingin%20pesan%20bouquet!" class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
-                <img alt="Bouquet of flowers" src="src/images/bouqet5.jpeg"/>
-                <div class="p-4 text-center">
-                    <h3 class="text-xl font-semibold text-gray-800">Bouquet Snack</h3>
-                    <p class="text-gray-600">Rp 220,000</p>
+            <div class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="src/images/bouqet5.jpeg" class="w-full h-48 object-cover" alt="...">
+                    <div class="p-4 text-center">
+                        <h5 class="text-xl font-semibold mb-2">Bouquet Violet</h5>
+                        <h6 class="text-sm text-gray-500 mb-2">50k</h6>
+                        <button class="button-item" role="button">Deskripsi</button>
+                    </div>
                 </div>
-                <div class="product-overlay">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>Click Untuk Pesan Bouquet</span>
-                </div>
-            </a>
+            </div>
             <!-- Product Card 6 -->
-            <a href="https://api.whatsapp.com/send?phone=6287785404712&text=Halo,%20saya%20ingin%20pesan%20bouquet!" class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
-                <img alt="Bouquet of flowers" src="src/images/bouqet6.jpeg"/>
-                <div class="p-4 text-center">
-                    <h3 class="text-xl font-semibold text-gray-800">Bouquet Snack</h3>
-                    <p class="text-gray-600">Rp 280,000</p>
+            <div class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="src/images/bouqet6.jpeg" class="w-full h-48 object-cover" alt="...">
+                    <div class="p-4 text-center">
+                        <h5 class="text-xl font-semibold mb-2">Chocolate Bouquet</h5>
+                        <h6 class="text-sm text-gray-500 mb-2">50k</h6>
+                        <button class="button-item" role="button">Deskripsi</button>
+                    </div>
                 </div>
-                <div class="product-overlay">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>Click Untuk Pesan Bouquet</span>
-                </div>
-            </a>
+            </div>
             <!-- Product Card 7 -->
-            <a href="https://api.whatsapp.com/send?phone=6287785404712&text=Halo,%20saya%20ingin%20pesan%20bouquet!" class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
-                <img alt="Bouquet of flowers" src="src/images/bouqet7.jpeg"/>
-                <div class="p-4 text-center">
-                    <h3 class="text-xl font-semibold text-gray-800">Bouquet Snack</h3>
-                    <p class="text-gray-600">Rp 260,000</p>
+            <div class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="src/images/bouqet7.jpeg" class="w-full h-48 object-cover" alt="...">
+                    <div class="p-4 text-center">
+                        <h5 class="text-xl font-semibold mb-2">Bang-Bang Bouquet</h5>
+                        <h6 class="text-sm text-gray-500 mb-2">50k</h6>
+                        <button class="button-item" role="button">Deskripsi</button>
+                    </div>
                 </div>
-                <div class="product-overlay">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>Click Untuk Pesan Bouquet</span>
-                </div>
-            </a>
+            </div>
             <!-- Product Card 8 -->
-            <a href="https://api.whatsapp.com/send?phone=6287785404712&text=Halo,%20saya%20ingin%20pesan%20bouquet!" class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
-                <img alt="Bouquet of flowers" src="src/images/bouqet3.jpeg"/>
-                <div class="p-4 text-center">
-                    <h3 class="text-xl font-semibold text-gray-800">Bouquet Uang</h3>
-                    <p class="text-gray-600">Rp 310,000</p>
+            <div class="product-card mx-auto border-4 border-gray-300 rounded-lg shadow-lg max-w-full h-auto">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="src/images/bouqet3.jpeg" class="w-full h-48 object-cover" alt="...">
+                    <div class="p-4 text-center">
+                        <h5 class="text-xl font-semibold mb-2">Money Bouquet</h5>
+                        <h6 class="text-sm text-gray-500 mb-2">50k</h6>
+                        <button class="button-item" role="button">Deskripsi</button>
+                    </div>
                 </div>
-                <div class="product-overlay">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>Click Untuk Pesan Bouquet</span>
-                </div>
-            </a>
+            </div>
+
+
         </div>
+
     </section>
 
     <section id="Location" class="mb-8">
@@ -171,27 +184,30 @@
         </div>
         <div class="container">
             <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-              <p class="text-center">
-                <!-- <strong>Supermall Karawaci</strong>
+                <p class="text-center">
+                    <!-- <strong>Supermall Karawaci</strong>
                 <br>
                 Coconut Island
                 <br>
                 Tangerang,Banten
                 <br> -->
-              </p>
+                </p>
             </div>
             <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.831231469575!2d106.78507357490206!3d-6.4040834626335235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e900106ab043%3A0xf8610258639cd549!2sAvocado%20nitnits!5e1!3m2!1sid!2sid!4v1731452179635!5m2!1sid!2sid" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.831231469575!2d106.78507357490206!3d-6.4040834626335235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e900106ab043%3A0xf8610258639cd549!2sAvocado%20nitnits!5e1!3m2!1sid!2sid!4v1731452179635!5m2!1sid!2sid"
+                    width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="space40px"></div>
             <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-              <a href="https://www.google.com/maps/place/Avocado+nitnits/@-6.4040835,106.7850736,888m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2e69e900106ab043:0xf8610258639cd549!8m2!3d-6.4040888!4d106.7876485!16s%2Fg%2F11y3dz6h7z?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D"
-                class="button btn-cta " target="_blank" data-aos="zoom-in">
-                <i class="fa-solid fa-route mr-2"></i>
-                &nbsp;&nbsp;Go To Google Maps
-              </a>
+                <a href="https://www.google.com/maps/place/Avocado+nitnits/@-6.4040835,106.7850736,888m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2e69e900106ab043:0xf8610258639cd549!8m2!3d-6.4040888!4d106.7876485!16s%2Fg%2F11y3dz6h7z?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D"
+                    class="button btn-cta " target="_blank" data-aos="zoom-in">
+                    <i class="fa-solid fa-route mr-2"></i>
+                    &nbsp;&nbsp;Go To Google Maps
+                </a>
             </div>
-          </div>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -203,4 +219,5 @@
 
     <script src="src/script.js"></script>
 </body>
+
 </html>

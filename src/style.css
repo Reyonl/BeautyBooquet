@@ -1,3 +1,16 @@
+@media only screen and (max-width: 600px) {
+    #hero {
+        width: 300px !important;
+        height: auto !important;
+    }
+}
+
+a.bisnis {
+    color: #4ac503;
+}
+
+
+
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -5,6 +18,7 @@
     bottom: 100%;
     z-index: 10;
 }
+
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -16,19 +30,72 @@
     border-radius: 0.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* From Uiverse.io by adamgiebl */
+.button-item {
+    align-items: center;
+    appearance: none;
+    background-color: #EEF2FF;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #4ac503;
+    box-shadow: rgba(83, 109, 254, 0.2) 0 2px 4px, rgba(83, 109, 254, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #4ac503;
+    cursor: pointer;
+    display: inline-flex;
+    /* font-family: "JetBrains Mono", monospace; */
+    height: 56px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 20px;
+}
+
+.button-item:focus {
+    outline: none;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(83, 109, 254, 0.4) 0 2px 4px, rgba(83, 109, 254, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-item:hover {
+    box-shadow: rgba(83, 109, 254, 0.3) 0 4px 8px, rgba(83, 109, 254, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-item:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
 .product-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
+
 .product-card img {
     width: 100%;
     height: auto;
     display: block;
     transition: transform 0.3s ease;
 }
+
 .product-card:hover img {
     transform: scale(1.1);
 }
+
 .product-overlay {
     position: absolute;
     top: 0;
@@ -45,33 +112,44 @@
     color: #fff;
     text-align: center;
 }
+
 .product-card:hover .product-overlay {
     opacity: 1;
 }
+
 .product-overlay i {
     font-size: 3rem;
     margin-bottom: 0.5rem;
     animation: bounce 1s infinite;
 }
+
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
 }
+
 .product-overlay span {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 #dropdown {
-    display: none; /* Hide dropdown by default */
+    display: none;
+    /* Hide dropdown by default */
 }
 
 #dropdown.hidden {
-    display: none; /* Hide when hidden class is added */
+    display: none;
+    /* Hide when hidden class is added */
 }
+
 .typing {
     border-right: 2px solid;
     white-space: nowrap;
@@ -79,15 +157,202 @@
     animation: caret 0.7s step-end infinite;
 }
 
-@keyframes caret {
-    0%, 100% { border-color: transparent; }
-    50% { border-color: black; }
+/* coba card */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+
+a.click {
+    margin-top: 10px;
+    transform-style: preserve-3d;
+    transition: ease transform 2.3s, ease background .5s;
+    transform: translateZ(-1px) rotatey(-180deg);
+    background-color: white;
+    border: 1px solid rgb(159, 224, 142);
+    font-weight: 200;
+    font-size: .7em;
+    color: rgb(32, 30, 30);
+    padding: 14px 20px;
+    outline: none;
+    text-decoration: none;
+
+    &:hover {
+        background-color: white;
+        color: #0b0f08;
+    }
 }
 
 
-.itim-regular {
-    font-family: "Itim", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #212121;
 
+    section {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .row {
+            align-items: center;
+            height: 100vh;
+        }
+    }
+}
+
+.card {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin: 10px 0;
+    transition: ease all 2.3s;
+    perspective: 1200px;
+
+    &:hover {
+        .cover {
+            transform: rotateX(0deg) rotateY(-180deg);
+
+            &:before {
+                transform: translateZ(30px);
+            }
+
+            &:after {
+                background-color: black;
+            }
+
+            h1 {
+                transform: translateZ(100px);
+            }
+
+            .price {
+                transform: translateZ(60px);
+            }
+
+            a {
+                transform: translateZ(-60px) rotatey(-180deg);
+            }
+        }
+    }
+
+    .cover {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: ease all 2.3s;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        &:before {
+            content: '';
+            position: absolute;
+            border: 5px solid rgba(255, 255, 255, .5);
+            box-shadow: 0 0 12px rgba(0, 0, 0, .3);
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            z-index: 2;
+            transition: ease all 2.3s;
+            transform-style: preserve-3d;
+            transform: translateZ(0px);
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 2;
+            transition: ease all 1.3s;
+            background: rgba(0, 0, 0, .4);
+        }
+
+        &.item-a {
+            background-image: url('/src/images/bouqet1.jpeg');
+        }
+
+        &.item-b {
+            background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600&q=80');
+        }
+
+        &.item-c {
+            background-image: url('https://images.unsplash.com/photo-1525945518069-b924046d1385?auto=format&fit=crop&w=600&q=80');
+        }
+
+        h1 {
+            font-weight: 600;
+            position: absolute;
+            bottom: 55px;
+            left: 50px;
+            color: white;
+            transform-style: preserve-3d;
+            transition: ease all 2.3s;
+            z-index: 3;
+            font-size: 3em;
+            transform: translateZ(0px);
+        }
+
+        .price {
+            font-weight: 200;
+            position: absolute;
+            top: 55px;
+            right: 50px;
+            color: white;
+            transform-style: preserve-3d;
+            transition: ease all 2.3s;
+            z-index: 4;
+            font-size: 2em;
+            transform: translateZ(0px);
+        }
+    }
+
+    .card-back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #0b0f08;
+        transform-style: preserve-3d;
+        transition: ease all 2.3s;
+        transform: translateZ(-1px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            transform-style: preserve-3d;
+            transition: ease transform 2.3s, ease background .5s;
+            transform: translateZ(-1px) rotatey(-180deg);
+            background: transparent;
+            border: 1px solid white;
+            font-weight: 200;
+            font-size: 1.3em;
+            color: white;
+            padding: 14px 32px;
+            outline: none;
+            text-decoration: none;
+
+            &:hover {
+                background-color: white;
+                color: #0b0f08;
+            }
+        }
+    }
+}
+
+/* coba card */
+
+
+
+
+@keyframes caret {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
+}
