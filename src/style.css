@@ -91,3 +91,16 @@
     font-style: normal;
   }
 
+  .has-text-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
