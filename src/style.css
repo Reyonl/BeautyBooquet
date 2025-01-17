@@ -232,37 +232,7 @@ body {
     }
 
 
-    .card-back {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background: #0b0f08;
-        transform-style: preserve-3d;
-        transition: ease all 2.3s;
-        transform: translateZ(-1px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
 
-        a {
-            transform-style: preserve-3d;
-            transition: ease transform 2.3s, ease background .5s;
-            transform: translateZ(-1px) rotatey(-180deg);
-            background: transparent;
-            border: 1px solid white;
-            font-weight: 200;
-            font-size: 1.3em;
-            color: white;
-            padding: 14px 32px;
-            outline: none;
-            text-decoration: none;
-
-            &:hover {
-                background-color: white;
-                color: #0b0f08;
-            }
-        }
-    }
 }
 
 /* coba card */
